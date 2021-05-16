@@ -1,0 +1,24 @@
+{
+  "name": "learfiledimg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaseTheCoder/learfieldIMG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChaseTheCoder/learfieldIMG/issues"
+  },
+  "homepage": "https://github.com/ChaseTheCoder/learfieldIMG#readme",
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
