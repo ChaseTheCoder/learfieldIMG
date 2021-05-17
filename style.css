@@ -55,6 +55,7 @@ nav a{
 }
 
 .toggle{
+  display: none;
   text-align: right;
   font-size: 20px;
 }
@@ -80,6 +81,9 @@ nav a{
 }
 
 @media all and (max-width: 1024px){
+  .toggle {
+    display: flex;
+  }
   .submenu-active .item{
     border-bottom: 1px solid #000000;
   }
@@ -121,14 +125,21 @@ nav a{
     display: inline-block;
     *display: inline;
     zoom: 1;
+    vertical-align: text-top;
 }
 
   .submenu-active .submenu{
-    display: block;
     width: 100vw;
     position: absolute; /* keeps it below nav */
     top: 77px;
+    left: 0;
     background-color: #F2F2F2;
+    padding: 40px 0 40px 0;
+  }
+
+  .submenu-active .mens-sports,
+  .submenu-active .womens-sports{
+    width: 45%
   }
   
   .submenu-active .subitem{
