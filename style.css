@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-/* Nav Bar */
+/* ---- Nav Bar ---- */
 nav{
   padding: 0 15px;
   background-color: #036937;
@@ -37,7 +37,7 @@ nav a{
   }
 }
 
-/* Mobile Menu */
+/* ---- Mobile Menu ---- */
 .menu{
   display: flex;
   flex-wrap: wrap;
@@ -70,6 +70,7 @@ nav a{
   display: block;
 }
 
+/* ---- Sub Menu ---- */
 .submenu {
   display: none;
 }
@@ -89,12 +90,11 @@ nav a{
   padding-left: 5px;
 }
 
-.subitem a{
+/* .subitem a{
   padding: 10px 15px;
   border-radius: 3px;
-}
+} */
 
-.submenu-active{
-  background-color: #111;
-  border-radius: 3px;
+.submenu-active .subitem{
+  background: #07371D;
 }
