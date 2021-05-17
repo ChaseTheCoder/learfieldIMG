@@ -80,6 +80,9 @@ nav a{
 }
 
 @media all and (max-width: 1024px){
+  .submenu-active .item{
+    border-bottom: 1px solid #000000;
+  }
   .submenu-active .title a{
     color: #F2A900;
     font-style: italic;
@@ -91,8 +94,10 @@ nav a{
   
   .submenu-active .subitem{
     background: #07371D;
+    border-bottom: 1px solid #000000;
+    width: 100%;
   }
-  
+
   /* FA Chevron Down Arrow */
   .has-submenu > a::after{
     font-family: "Font Awesome 5 Free";
@@ -112,6 +117,12 @@ nav a{
     width: auto;
   }
 
+  .submenu ul{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
   .submenu-active .submenu{
     display: block;
     width: 100vw;
@@ -119,7 +130,16 @@ nav a{
     top: 77px;
     background-color: #F2F2F2;
   }
-  .submenu-active .submenu a{
-    color: black;
+  
+  .submenu-active .subitem{
+    border-bottom: 1px solid #E5E5E5;
+  }
+  
+  .submenu-active .title a{
+    color: #036937;
+  }
+  .submenu-active .subtitle a{
+    color: #6A6D70;
+    text-transform: uppercase;
   }
 }
