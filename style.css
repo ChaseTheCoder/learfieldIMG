@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Nav Bar */
+nav{
+  display: flex;
+  min-height: 81px;
+  background-color: #036937;
+  font-family: 'Roboto', sans-serif;
+  border-top: 3px solid #F2A900;
+  border-bottom: 3px solid #F2A900;
+}
+
+/* Nav Bar Links */
+nav a{
+  padding: 28px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.item, .toggle{
+  list-style: none;
+}
+
+/* Responsive Nav Full Screen */
+@media screen and (min-width:1025px){
+  .item a:hover{
+    background: #F2A900;
+    color: #036937;
+  }
+}
+
+/* Mobile Menu */
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
