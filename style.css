@@ -6,8 +6,7 @@
 
 /* Nav Bar */
 nav{
-  display: flex;
-  min-height: 81px;
+  padding: 0 15px;
   background-color: #036937;
   font-family: 'Roboto', sans-serif;
   border-top: 3px solid #F2A900;
@@ -16,15 +15,18 @@ nav{
 
 /* Nav Bar Links */
 nav a{
-  padding: 28px;
   color: #FFFFFF;
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
 }
 
-.item, .toggle{
+.menu, .toggle, .subitem{
   list-style: none;
+}
+
+.item{
+  padding: 10px
 }
 
 /* Responsive Nav Full Screen */
@@ -40,5 +42,59 @@ nav a{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
+.menu li a{
+  display: block;
+  padding: 15px 5px;
+}
+
+.menu li.subitem a{
+  padding: 15px;
+}
+
+.toggle{
+  order:  1;
+  font-size: 20px;
+}
+
+.item{
+  order: 2; 
+  width: 100%;
+  text-align: left;
+  display: none;
+}
+
+.active .item{
+  display: block;
+}
+
+.submenu {
+  display: none;
+}
+
+.submenu-active .submenu{
+  display: block;
+}
+
+/* FA Chevron Down Arrow */
+.has-submenu > a::after{
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  content: "\f078";
+  color:#FFFFFF;
+  padding-left: 5px;
+}
+
+.subitem a{
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+.submenu-active{
+  background-color: #111;
+  border-radius: 3px;
+}
