@@ -1,11 +1,7 @@
-/* eslint-disable max-len */
-/* eslint-disable no-invalid-this */
-/* eslint-disable spaced-comment */
 // Toggle Mobile Menu
 const toggle = document.querySelector('.toggle');
 const menu = document.querySelector('.menu');
 
-// eslint-disable-next-line require-jsdoc
 function toggleMenu() {
   if (menu.classList.contains('active')) { //if menu has class of active
     menu.classList.remove('active');
@@ -23,7 +19,6 @@ toggle.addEventListener('click', toggleMenu, false);
 const items = document.querySelectorAll('.item');
 
 // in case of future submenus, able to add here
-// eslint-disable-next-line require-jsdoc
 function toggleItem() {
   if (this.classList.contains('submenu-active')) {
     this.classList.remove('submenu-active');
