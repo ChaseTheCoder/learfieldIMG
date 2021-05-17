@@ -6,7 +6,7 @@
 
 /* ---- Nav Bar ---- */
 nav{
-  padding: 0 15px;
+  padding: 0;
   background-color: #036937;
   font-family: 'Roboto', sans-serif;
   border-top: 3px solid #F2A900;
@@ -26,12 +26,12 @@ nav a{
 }
 
 .item{
-  padding: 10px
+  padding: 10px 20px 10px 20px;
 }
 
 /* Responsive Nav Full Screen */
 @media screen and (min-width:1025px){
-  .item a:hover{
+  .item:hover{
     background: #F2A900;
     color: #036937;
   }
@@ -72,7 +72,7 @@ nav a{
 }
 
 /* ---- Sub Menu ---- */
-.submenu {
+.submenu{
   display: none;
 }
 
