@@ -57,6 +57,7 @@ nav a{
 .toggle{
   order:  1;
   font-size: 20px;
+  right: 0;
 }
 
 .item{
@@ -79,22 +80,38 @@ nav a{
   display: block;
 }
 
-/* FA Chevron Down Arrow */
-.has-submenu > a::after{
-  font-family: "Font Awesome 5 Free";
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 900;
-  content: "\f078";
-  color:#FFFFFF;
-  padding-left: 5px;
+@media all and (max-width: 1024px){
+  /* FA Chevron Down Arrow */
+  .has-submenu > a::after{
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    content: "\f078";
+    color:#FFFFFF;
+    padding-left: 5px;
+  }
+  
+  .submenu-active .subitem{
+    background: #07371D;
+  }
 }
 
-/* .subitem a{
-  padding: 10px 15px;
-  border-radius: 3px;
-} */
+@media all and (min-width: 1024px){
+  .item{
+    position: relative;
+    display: block;
+    width: auto;
+  }
 
-.submenu-active .subitem{
-  background: #07371D;
+  .submenu-active .submenu{
+    display: block;
+    width: 100vw;
+    position: absolute; /* keeps it below nav */
+    top: 77px;
+    background-color: #F2F2F2;
+  }
+  .submenu-active .submenu a{
+    color: black;
+  }
 }
