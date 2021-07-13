@@ -3,7 +3,7 @@ Navigation menu for interview code challenge using pure HTML and CSS.  Make it r
 
 ## Use
 
-Click the link in the "About" section on this page.
+Click the link in the "About" section on this page. Or [click here to see.](https://chasethecoder.github.io/learfieldIMG/)
 
 ## Technologies
 
