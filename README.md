@@ -8,11 +8,11 @@ Click the link in the "About" section on this page. Or [click here to see.](http
 ## Technologies
 
 * Challenge was to not use outside libraries or frameworks.
-* Use HTML and CSS
+* Use HTML, CSS, and JavaScript
 
 ## Project Status
 
-Next step now that it is completed would be to add JavaScript for full animation.
+Next feature I would add would be smoother transitions for drop down menus.
 
 ## Contributers
 Chase Sheaff
